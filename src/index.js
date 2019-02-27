@@ -20,7 +20,7 @@ module.exports = function makeExchange(currency) {
     for (i in coins) {
        if(currency >= coins[i]) {
          twoCoins[i] = Math.floor(currency/coins[i]);
-         currency -= twoCoins[i] * coins[i];
+         currency =currency - twoCoins[i] * coins[i];
        }
 
        return twoCoins;
