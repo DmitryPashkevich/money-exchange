@@ -40,7 +40,7 @@ module.exports = function makeExchange(currency) {
 
     while (currency >= counter + 5) {
         counter += 5;
-        objectMoney['W'];
+        objectMoney['W']++;
     }
 
     while ( currency != counter ) {
