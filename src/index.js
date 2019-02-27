@@ -7,16 +7,20 @@ module.exports = function makeExchange(currency) {
 'W': 0,
 'P':0
     };
+
+    var noll = {
+
+    }
     
     var counter = 0;
     
     if (currency <= 0) {
-       return objectMoney;
+       return noll;
     }
 
     if (currency > 10000) {
-     objectMoney.error ="You are rich, my friend! We don't have so much coins for exchange";
-     return objectMoney;
+     noll.error ="You are rich, my friend! We don't have so much coins for exchange";
+     return noll;
     }
  
     while (currency >= counter + 50) {
